@@ -327,3 +327,15 @@ body {
 @media (max-width: 600px) {
   .paper { max-height: 62vh; }
 }
+
+
+/* ---- Back button / tile heading spacing fix ---- */
+.back {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  left: 12px;
+  z-index: 100;
+}
+.tiles {
+  margin-top: clamp(70px, 13vh, 120px);
+}
