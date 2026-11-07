@@ -339,3 +339,7 @@ body {
 .tiles {
   margin-top: clamp(70px, 13vh, 120px);
 }
+
+/* ---- Final screen photo ---- */
+.photo-placeholder img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-placeholder img { object-position: center top; }
