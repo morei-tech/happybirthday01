@@ -1,7 +1,17 @@
 /* script.js */
 const CONFIG = {
-  to: "My Sweetheart,",
-  letter: "Wishing you a day filled with\nlove, laughter and happiness.\n\nThank you for making every\nmoment special and beautiful.\n\nMay all your dreams come true.\n\nLove, Mayank ❤"
+  to: "My Love, ❤️",
+  letter: `Happy, happy birthday, jaan! 🎂❤️
+
+I wanted to write something for you, but honestly, words barely feel like enough to capture how much you mean to me. Life is just so much warmer and softer with you in it.💞
+
+I love how you take care of the tiniest things without even needing to be asked those little, thoughtful details you notice always mean the absolute world to me. And I’m in constant awe of how incredible you are at everything you do. You pour your heart into whatever comes your way, and you make it all look so effortless.🥹💕
+
+Then there’s your smile, it is the most contagious, brightest thing, and it never fails to completely make my day. You are my safe space, my comfort, and the absolute best part of my life.💖
+
+I hope your life is filled with so much happiness, good food, and all the love you deserve. Thank you for being you, and for being mine.😘
+
+I love you to the moon and back, forever and always. Happy birthday, my love! ✨🫶🏻`
 };
 
 const $ = s => document.querySelector(s);
