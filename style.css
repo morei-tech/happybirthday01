@@ -374,3 +374,27 @@ body {
   }
   #s7 .track-info { min-width: 0; }
 }
+
+/* ---- Screen 7 phone sizing (v3) ---- */
+@media (max-width: 768px) {
+  #s7.active { padding: 12px 14px 28px; gap: 14px; }
+  #s7 .back {
+    position: sticky;
+    top: 8px;
+    left: auto;
+    align-self: flex-start;
+    flex-shrink: 0;
+  }
+  #s7 .tiles { margin-top: 0; font-size: clamp(16px, 5.2vw, 22px); }
+  #s7 .vinyl-container { width: min(62vw, 230px); }
+  #s7 .lyr { font-size: clamp(10px, 3vw, 13px); }
+  #s7 .polaroid-card {
+    width: min(40vw, 150px);
+    border-width: 8px;
+    border-bottom-width: 24px;
+    padding: 8px 6px;
+  }
+  #s7 .polaroid-card b { font-size: clamp(14px, 4vw, 18px); }
+  #s7 .player { width: min(84vw, 300px); padding: 8px 12px; }
+  #s7 .track-info { font-size: 12px; }
+}
