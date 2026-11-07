@@ -341,7 +341,7 @@ body {
 }
 
 /* ---- Screen 7 mobile layout (v2) ---- */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #s7.active {
     flex-direction: column;
     align-items: center;
