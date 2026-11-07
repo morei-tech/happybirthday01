@@ -194,8 +194,3 @@ function startFinalConfetti() {
   burstConfetti(canvas, true);
 }
 
-/* ---- Start background song on first tap ---- */
-document.addEventListener('click', () => {
-  const a = document.getElementById('bgm');
-  if (a && a.paused) a.play().catch(() => {});
-}, { once: true });
