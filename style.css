@@ -339,3 +339,47 @@ body {
 .tiles {
   margin-top: clamp(70px, 13vh, 120px);
 }
+
+/* ---- Screen 7 mobile layout ---- */
+@media (max-width: 600px) {
+  #s7 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 80px 14px 30px;
+    overflow-y: auto;
+  }
+  #s7 .tiles {
+    position: static !important;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #s7 .tiles span {
+    font-size: clamp(16px, 5vw, 22px);
+    padding: 2px 5px;
+    margin: 1px;
+  }
+  #s7 .vinyl-container {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: min(88vw, 320px);
+  }
+  #s7 .polaroid-card {
+    position: relative !important;
+    inset: auto !important;
+    transform: rotate(-2deg) !important;
+    width: min(62vw, 220px);
+    margin: 0 auto;
+  }
+  #s7 .player {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: min(90vw, 340px);
+  }
+  #s7 .track-info { min-width: 0; flex: 1; }
+}
