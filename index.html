@@ -7,7 +7,7 @@
   <title>Happy Birthday Surprise</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
   <!-- ============ Reusable SVG Assets ============ -->
@@ -114,32 +114,37 @@
       <!-- Gift Box Elements -->
       <symbol id="giftbox" viewBox="0 0 200 200">
         <defs>
-          <linearGradient id="gbT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5cba80"/><stop offset="1" stop-color="#2f8a56"/></linearGradient>
-          <linearGradient id="gbL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f8a56"/><stop offset="1" stop-color="#1f6a40"/></linearGradient>
-          <linearGradient id="gbR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f6a40"/><stop offset="1" stop-color="#114628"/></linearGradient>
-          <linearGradient id="gbK" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a3a3a"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+          <linearGradient id="gxBody" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b3121b"/><stop offset=".5" stop-color="#d21c27"/><stop offset="1" stop-color="#9a0f17"/></linearGradient>
+          <linearGradient id="gxSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d0b12"/><stop offset="1" stop-color="#5c070c"/></linearGradient>
+          <linearGradient id="gxLid" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bf141e"/><stop offset=".5" stop-color="#df2430"/><stop offset="1" stop-color="#a8101a"/></linearGradient>
+          <linearGradient id="gxTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ee3a45"/><stop offset="1" stop-color="#c4161f"/></linearGradient>
+          <linearGradient id="gxRib" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1c8a4c"/><stop offset=".45" stop-color="#52c783"/><stop offset="1" stop-color="#17703d"/></linearGradient>
+          <linearGradient id="gxBow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#62d791"/><stop offset="1" stop-color="#1a8a4b"/></linearGradient>
         </defs>
-        <g transform="translate(0.00 0.00) scale(1.0000)">
-          <ellipse cx="100" cy="190" rx="72" ry="8" fill="#000" opacity=".16"/>
-          <path d="M24 80L100 104L100 186L26 160Z" fill="url(#gbL)" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M100 104L176 80L174 158L100 186Z" fill="url(#gbR)" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M100 56L176 80L100 104L24 80Z" fill="url(#gbT)" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M34 98L96 121M32 124L96 150M36 140L96 163" fill="none" stroke="#9be0b5" stroke-opacity=".22" stroke-width="1.3" stroke-linecap="round"/>
-          <path d="M112 118L170 96M112 146L168 124" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.3" stroke-linecap="round"/>
-          <path d="M40 78L100 59L160 78" fill="none" stroke="#c4f0d3" stroke-opacity=".55" stroke-width="1.4" stroke-linecap="round"/>
-          <path d="M92 58.5L100 56L108 58.5L108 101.5L100 104L92 101.5Z" fill="url(#gbK)" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
-          <path d="M92 101.5L100 104L100 186L92 183.2Z" fill="#161616" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
-          <path d="M100 104L108 101.5L108 183L100 186Z" fill="#0a0a0a" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
-          <path d="M95 62L95 99" stroke="#6a6a6a" stroke-opacity=".55" stroke-width="1.2" stroke-linecap="round"/>
-          <g class="gb-bow">
-            <path d="M97 82L70 101L77 109L101 91Z" fill="url(#gbK)" stroke="#000" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M103 82L130 101L123 109L99 91Z" fill="url(#gbK)" stroke="#000" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M100 79C80 50 48 46 52 66C56 86 88 88 100 79Z" fill="url(#gbK)" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M100 79C120 50 152 46 148 66C144 86 112 88 100 79Z" fill="url(#gbK)" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M94 74C82 58 66 56 62 64M106 74C118 58 134 56 138 64" fill="none" stroke="#7a7a7a" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/>
-            <ellipse cx="100" cy="80" rx="9.5" ry="8" fill="url(#gbK)" stroke="#000" stroke-width="1.6"/>
-            <path d="M95 77Q100 73 105 77" fill="none" stroke="#8a8a8a" stroke-opacity=".7" stroke-width="1.3" stroke-linecap="round"/>
-          </g>
+        <ellipse cx="102" cy="189" rx="64" ry="7" fill="#000" opacity=".16"/>
+        <path d="M44 100L146 100L146 184L44 184Z" fill="url(#gxBody)"/>
+        <path d="M146 100L158 92L158 177L146 184Z" fill="url(#gxSide)"/>
+        <path d="M84 100L106 100L106 184L84 184Z" fill="url(#gxRib)"/>
+        <path d="M89 102L89 182" stroke="#b9f0cf" stroke-opacity=".45" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M44 100L146 100L146 108L44 108Z" fill="#000" opacity=".2"/>
+        <path d="M152 78L164 70L164 92L152 100Z" fill="url(#gxSide)"/>
+        <path d="M38 78L152 78L152 100L38 100Z" fill="url(#gxLid)"/>
+        <path d="M84 78L106 78L106 100L84 100Z" fill="url(#gxRib)"/>
+        <path d="M38 78L50 70L164 70L152 78Z" fill="url(#gxTop)"/>
+        <path d="M84 78L106 78L118 70L96 70Z" fill="url(#gxRib)"/>
+        <path d="M40 80L150 80" stroke="#ff8f98" stroke-opacity=".45" stroke-width="1.3" stroke-linecap="round"/>
+        <g class="gb-bow">
+          <path d="M94 77C82 89 64 99 48 119L60 127C74 111 90 99 104 83Z" fill="url(#gxBow)"/>
+          <path d="M106 77C120 87 136 95 148 111L138 119C126 105 112 95 98 83Z" fill="url(#gxBow)"/>
+          <path d="M52 114L60 121M141 106L135 113" stroke="#0f5a30" stroke-opacity=".5" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M100 73C72 30 38 38 48 62C56 80 90 80 100 73Z" fill="url(#gxBow)"/>
+          <path d="M100 73C128 28 162 36 152 62C144 80 110 80 100 73Z" fill="url(#gxBow)"/>
+          <path d="M96 71C76 44 56 48 60 62C64 72 86 74 96 71Z" fill="#126f3c" opacity=".55"/>
+          <path d="M104 71C124 42 146 46 142 62C138 72 114 74 104 71Z" fill="#126f3c" opacity=".55"/>
+          <path d="M60 52C70 44 82 50 90 60M140 52C130 44 118 50 110 60" fill="none" stroke="#c9f7da" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>
+          <ellipse cx="100" cy="75" rx="12" ry="10" fill="url(#gxBow)"/>
+          <path d="M92 71Q100 65 108 71" fill="none" stroke="#d8fbe6" stroke-opacity=".75" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M92 79Q100 85 108 79" fill="none" stroke="#0f5a30" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round"/>
         </g>
       </symbol>
 
