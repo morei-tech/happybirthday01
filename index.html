@@ -7,7 +7,7 @@
   <title>Happy Birthday Surprise</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
   <!-- ============ Reusable SVG Assets ============ -->
@@ -113,10 +113,34 @@
       
       <!-- Gift Box Elements -->
       <symbol id="giftbox" viewBox="0 0 200 200">
-        <path d="M20 80 100 55 180 80V170L100 195 20 170Z" fill="#6e0a10"/>
-        <path d="M20 80 100 105 180 80 100 55Z" fill="#8e0f14"/><path d="M100 105V195L20 170V80Z" fill="#7a0b11"/>
-        <path d="M85 60 115 54 118 190 82 190Z" fill="#a01620" opacity=".9"/>
-        <path d="M100 56C70 20 40 40 70 62 90 70 100 60 100 56ZM100 56C130 20 160 40 130 62 110 70 100 60 100 56Z" fill="#a01620" stroke="#4a060a" stroke-width="3"/>
+        <defs>
+          <linearGradient id="gbT" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5cba80"/><stop offset="1" stop-color="#2f8a56"/></linearGradient>
+          <linearGradient id="gbL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f8a56"/><stop offset="1" stop-color="#1f6a40"/></linearGradient>
+          <linearGradient id="gbR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f6a40"/><stop offset="1" stop-color="#114628"/></linearGradient>
+          <linearGradient id="gbK" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a3a3a"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+        </defs>
+        <g transform="translate(0.00 0.00) scale(1.0000)">
+          <ellipse cx="100" cy="190" rx="72" ry="8" fill="#000" opacity=".16"/>
+          <path d="M24 80L100 104L100 186L26 160Z" fill="url(#gbL)" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M100 104L176 80L174 158L100 186Z" fill="url(#gbR)" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M100 56L176 80L100 104L24 80Z" fill="url(#gbT)" stroke="#0d0d0d" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M34 98L96 121M32 124L96 150M36 140L96 163" fill="none" stroke="#9be0b5" stroke-opacity=".22" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M112 118L170 96M112 146L168 124" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M40 78L100 59L160 78" fill="none" stroke="#c4f0d3" stroke-opacity=".55" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M92 58.5L100 56L108 58.5L108 101.5L100 104L92 101.5Z" fill="url(#gbK)" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M92 101.5L100 104L100 186L92 183.2Z" fill="#161616" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M100 104L108 101.5L108 183L100 186Z" fill="#0a0a0a" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M95 62L95 99" stroke="#6a6a6a" stroke-opacity=".55" stroke-width="1.2" stroke-linecap="round"/>
+          <g class="gb-bow">
+            <path d="M97 82L70 101L77 109L101 91Z" fill="url(#gbK)" stroke="#000" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M103 82L130 101L123 109L99 91Z" fill="url(#gbK)" stroke="#000" stroke-width="1.4" stroke-linejoin="round"/>
+            <path d="M100 79C80 50 48 46 52 66C56 86 88 88 100 79Z" fill="url(#gbK)" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M100 79C120 50 152 46 148 66C144 86 112 88 100 79Z" fill="url(#gbK)" stroke="#000" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M94 74C82 58 66 56 62 64M106 74C118 58 134 56 138 64" fill="none" stroke="#7a7a7a" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/>
+            <ellipse cx="100" cy="80" rx="9.5" ry="8" fill="url(#gbK)" stroke="#000" stroke-width="1.6"/>
+            <path d="M95 77Q100 73 105 77" fill="none" stroke="#8a8a8a" stroke-opacity=".7" stroke-width="1.3" stroke-linecap="round"/>
+          </g>
+        </g>
       </symbol>
 
       <symbol id="heartSeal" viewBox="0 0 60 60">

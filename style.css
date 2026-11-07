@@ -357,3 +357,8 @@ body {
 @keyframes bqBreathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.07); } }
 @keyframes bqLeaf { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
 @media (prefers-reduced-motion: reduce) { .bq-sway, .bq-rose, .bq-leaf { animation: none; } }
+
+/* ---- Gift box bow animation ---- */
+.gb-bow { transform-box: fill-box; transform-origin: 50% 85%; animation: gbBow 3.6s ease-in-out infinite; }
+@keyframes gbBow { 0%,100% { transform: rotate(-1.6deg) scale(1); } 50% { transform: rotate(1.6deg) scale(1.03); } }
+@media (prefers-reduced-motion: reduce) { .gb-bow { animation: none; } }
